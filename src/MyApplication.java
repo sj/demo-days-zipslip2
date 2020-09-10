@@ -20,7 +20,10 @@ class MyApplication {
             // My manager wants all filenames to be lowercase
             String loweredFilename = filename.toLowerCase();
 
-            // TODO: something with a FileOutputStream and a buffer?            
+            // TODO: something with a FileOutputStream and a buffer?
+            FileOutputStream fos = new FileOutputStream(loweredFilename);
+
+            fos.close();
         }
     }
 }
